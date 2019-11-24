@@ -2,7 +2,20 @@
   background: $primary-color;
   font-size: 1.25rem;
   font-weight: bold;
-  box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
   border-radius: 3px;
   border: none;
+}
+
+.button {
+  font-family: $title-font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem-calc(18);
+  line-height: rem-calc(20);
+  border-radius: rem-calc(10);
+
+  &-primary {
+    background-color: $secondary-color;
+  }
 }
