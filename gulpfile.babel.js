@@ -215,10 +215,17 @@ gulp.task('phpcbf', function () {
   .pipe(gulp.dest('.'));
 });
 
+
 // Start BrowserSync to preview the site in
 function server(done) {
   browser.init({
     proxy: BROWSERSYNC.url,
+    open: 'internal',
+    host: 'localhost',
+    https: {
+      key: "/Users/lemur/server.key",
+      cert: "/Users/lemur/server.crt",
+    },
 
     ui: {
       port: 8080

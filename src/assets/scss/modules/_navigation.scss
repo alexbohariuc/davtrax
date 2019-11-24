@@ -3,6 +3,7 @@
 .site-title-bar {
   @include hide-for(medium);
 }
+
 //
 .desktop-menu,
 .site-navigation .top-bar-left {
@@ -20,9 +21,58 @@
 }
 
 .nav-previous {
-  float:left;
+  float: left;
 }
 
 .nav-next {
-  float:right;
+  float: right;
+}
+
+.site-navigation {
+  padding: rem-calc(10 0);
+  .top-bar {
+    &-background {
+      background-color: $dark-blue;
+      height: rem-calc(39);
+      width: 100%;
+      border-radius: rem-calc(10);
+      width: rem-calc(80);
+      margin-right: rem-calc(20);
+    }
+
+    &-right {
+      background-color: $dark-blue;
+      border-radius: rem-calc(10);
+
+      .menu {
+        li {
+          a {
+            padding: rem-calc(10 15);
+            font-size: rem-calc(16);
+            color: $white;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+
+      &-contact {
+        a {
+          background-color: $secondary-color;
+          border-radius: rem-calc(10);
+        }
+
+        &-details {
+          margin-left: rem-calc(10);
+
+          a {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
 }

@@ -39,6 +39,9 @@ if ( ! function_exists( 'davtrax_scripts' ) ) :
 		// Enqueue the main Stylesheet.
 		wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/' . davtrax_asset_path( 'app.css' ), array(), '2.10.4', 'all' );
 
+		// Enqueue the main Fonts - Montserrat & Raleway.
+		wp_enqueue_style( 'main-font', 'https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Raleway:400,700,700i&display=swap', array(), '2.10.4', 'all' );
+
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );
 
