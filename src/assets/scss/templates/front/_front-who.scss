@@ -1,6 +1,19 @@
 &-who {
+  margin: rem-calc(60 0);
+
   &-image {
-    clip-path: polygon(0 0, 1% 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0);
-    box-shadow: $black 2px 2px 20px;
+    img {
+      clip-path: polygon(0 0, 0% 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0);
+      box-shadow: $black 2px 2px 20px;
+    }
+  }
+
+  &-description{
+    margin-top: rem-calc(30);
+    font-family: $body-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem-calc(16);
+    line-height: rem-calc(23);
   }
 }

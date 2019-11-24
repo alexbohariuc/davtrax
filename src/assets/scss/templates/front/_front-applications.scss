@@ -1,0 +1,69 @@
+&-applications {
+  margin-bottom: rem-calc(120);
+
+  &-img {
+    clip-path: polygon(0 0, 0% 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0);
+
+    &-second {
+      margin-top: rem-calc(120);
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &-mainDescription {
+    clip-path: polygon(0 0, 1% 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0);
+    background-color: $secondary-color;
+    color: $white;
+    font-family: $body-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem-calc(16);
+    line-height: rem-calc(23);
+    position: absolute;
+    width: rem-calc(250);
+    padding: rem-calc(30);
+    left: rem-calc(100);
+    bottom: 0;
+  }
+
+  .main-title {
+    margin: rem-calc(120 0 60 0);
+  }
+
+  &-description {
+    font-family: $body-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  &-card {
+    margin-bottom: rem-calc(30);
+    &-wrap{
+      filter: drop-shadow(3px 3px 5px rgba(50, 50, 0, 0.3));
+    }
+    clip-path: polygon(0 0, 0% 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0);
+    padding: rem-calc(20);
+    background-color: $white;
+
+    &-title{
+      font-family: $title-font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 93.8%;
+      margin-bottom: rem-calc(10);
+    }
+    &-description{
+      font-family: $body-font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 143.4%;
+    }
+  }
+}
