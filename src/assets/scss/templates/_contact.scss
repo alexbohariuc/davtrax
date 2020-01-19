@@ -1,0 +1,23 @@
+.page-template-page-contact, .contact-form{
+  form{
+    input[type=text], input[type=email], textarea, input[type=tel]{
+      background: #FFFFFF;
+      border: 1px solid #BDBDBD;
+      box-sizing: border-box;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: rem-calc(10);
+    }
+    label{
+      font-family: $body-font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 143.4%;
+      margin-bottom: rem-calc(20);
+    }
+    input[type=submit]{
+      float: right;
+    }
+  }
+}

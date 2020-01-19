@@ -1,8 +1,12 @@
 .item{
+  margin-bottom: rem-calc(30);
 
   &-product{
     img{
       width: 100%;
+    }
+    &:hover .item-product-title{
+      color: $primary-color;
     }
     &-title{
       font-family: $title-font-family;
@@ -12,6 +16,9 @@
       line-height: 93.8%;
       color: $dark-blue;
       margin: rem-calc(10 0);
+      &:hover{
+        color: $primary-color;
+      }
     }
     &-excerpt{
       font-family: $body-font-family;

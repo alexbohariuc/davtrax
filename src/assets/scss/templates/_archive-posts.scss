@@ -1,0 +1,14 @@
+.post {
+  &-title {
+    a {
+      h2 {
+        color: $dark-blue;
+        text-transform: none;
+        margin-bottom: rem-calc(30);
+      }
+    }
+    &:hover a h2{
+      color: $primary-color;
+    }
+  }
+}

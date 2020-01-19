@@ -1,9 +1,30 @@
 &-trust {
+  &-logos{
+    margin: rem-calc(60 0);
+    .slick-slide{
+      text-align: center;
+    }
+    img{
+      filter: grayscale(100%);
+      max-width: rem-calc(160);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      transition: all ease-in-out .3s;
+      &:hover{
+        filter: grayscale(0%);
+        transition: all ease-in-out .3s;
+      }
+    }
+  }
+  &-testimonials{
+    margin: rem-calc(30 0);
+  }
   &-testimonial {
     &-text {
       font-family: $body-font-family;
       font-style: italic;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 16px;
       line-height: 23px;
     }
@@ -13,9 +34,9 @@
       p {
         font-family: $body-font-family;
         font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
+        font-weight: bolder;
+        font-size: 12px;
+        line-height: 14px;
         margin: 0;
       }
     }

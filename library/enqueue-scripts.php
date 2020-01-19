@@ -43,7 +43,7 @@ if ( ! function_exists( 'davtrax_scripts' ) ) :
 		wp_enqueue_style( 'main-font', 'https://fonts.googleapis.com/css?family=Muli:400,500,600,700,900|Raleway:400,700,700i&display=swap', array(), '2.10.4', 'all' );
 
 		// Enqueue Slick JS Slider
-		wp_enqueue_style( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1', 'all' );
+		wp_enqueue_style( 'slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1', 'all' );
 
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );

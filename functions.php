@@ -57,5 +57,8 @@ require_once( 'library/gutenberg.php' );
 /** Custom post types */
 require_once( 'library/custom-post-types.php' );
 
+/** Contact */
+require_once( 'library/contact.php' );
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-davtrax-protocol-relative-theme-assets.php' );

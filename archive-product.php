@@ -19,11 +19,11 @@ get_header(); ?>
 	<div class="grid-container">
 		<main class="archive-products grid-x">
 			<div class="cell small-12">
-
-			</div>
-			<div class="cell small-12">
 				<div class="main-title">
-					<h1>PLĂCILE PENTRU DRUMURI TEMPORARE DAVTRAX</h1>
+					<h1>PLĂCILE PENTRU</br>
+						DRUMURI TEMPORARE</br>
+						<mark>DAVTRAX</mark>
+					</h1>
 				</div>
 			</div>
 			<div class="cell small-12 medium-8">

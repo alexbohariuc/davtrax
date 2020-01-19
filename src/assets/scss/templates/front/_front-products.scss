@@ -1,11 +1,12 @@
 &-products {
+  margin: rem-calc(60 0);
   &-description {
     font-family: $body-font-family;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-    margin: rem-calc(30 0);
+    margin: rem-calc(60 0);
 
     p {
       margin: rem-calc(0);

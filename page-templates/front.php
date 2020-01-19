@@ -9,6 +9,8 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/front/front-applications' ); ?>
 <?php get_template_part( 'template-parts/front/front-trust' ); ?>
 <?php get_template_part( 'template-parts/front/front-products' ); ?>
+<?php get_template_part( 'template-parts/front/front-contact' ); ?>
+
 
 
 <?php get_footer();
