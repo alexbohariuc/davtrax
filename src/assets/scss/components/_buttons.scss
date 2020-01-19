@@ -11,18 +11,20 @@
   font-family: $title-font-family;
   font-style: normal;
   font-weight: 500;
-  font-size: rem-calc(18);
-  line-height: rem-calc(20);
-  border-radius: rem-calc(10);
+  font-size: rem-calc(16);
+  line-height: rem-calc(16);
+  border-radius: rem-calc(30);
+  margin: rem-calc(20 0);
 
   &-primary {
     background-color: $secondary-color;
+    color: $white;
   }
 
   &-link {
     font-family: $title-font-family;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 16px;
     line-height: 20px;
     text-align: center;

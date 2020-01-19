@@ -1,0 +1,25 @@
+.item{
+
+  &-product{
+    img{
+      width: 100%;
+    }
+    &-title{
+      font-family: $title-font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: rem-calc(18);
+      line-height: 93.8%;
+      color: $dark-blue;
+      margin: rem-calc(10 0);
+    }
+    &-excerpt{
+      font-family: $body-font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: rem-calc(16);
+      line-height: rem-calc(23);
+      color: $dark-blue;
+    }
+  }
+}

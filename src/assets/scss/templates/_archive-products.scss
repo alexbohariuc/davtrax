@@ -1,0 +1,62 @@
+.archive {
+
+  &-products {
+    &-description {
+      margin-top: rem-calc(30);
+      margin-bottom: rem-calc(60);
+      font-family: $body-font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &-product {
+      margin-bottom: rem-calc(60);
+
+      &-img {
+        filter: drop-shadow(3px 3px 5px rgba(50, 50, 0, 0.3));
+        img {
+          clip-path: polygon(0 0, 0% 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0);
+        }
+      }
+
+      &-title h2 a {
+        font-family: $title-font-family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: $dark-blue;
+      }
+
+      &-excerpt {
+        font-family: $body-font-family;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+      }
+
+      &-attributes {
+        margin: rem-calc(30 0);
+
+        &-attribute {
+
+          span, mark {
+            font-family: $title-font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            display: block;
+            background-color: transparent;
+          }
+
+        }
+
+      }
+
+    }
+  }
+}

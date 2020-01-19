@@ -3,44 +3,6 @@
     "title": "Homepage",
     "fields": [
         {
-            "key": "field_5ddaa09f61227",
-            "label": "Titlu principal",
-            "name": "featured_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "40",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5ddaa0bd61228",
-            "label": "Titlu secundar",
-            "name": "featured_subtitle",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "60",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
             "key": "field_5ddaa8a92b9c1",
             "label": "Cine suntem noi - titlu",
             "name": "front_who_title",
@@ -101,6 +63,26 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5e24a84e4df73",
+            "label": "Descriere",
+            "name": "front_description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "DAVTRAX este compania care ofera solutii de drumuri si platforme de lucru temporare pentru diverse industrii.\r\nDAVTRAX furnizeaza o gama completa de solutii pentru proiectele dumneavoastra, incepand cu protectii de gazon, pana la drumuri temporare pentru utilaje de peste 500 t.\r\n\r\nProdusele DAVTRAX sunt special concepute sa ofere o solutie rapida, accesibila si eficienta pentru cai de acces temporare.\r\n\r\nFață de soluțiile tradiționale (dale de beton, pavaje din ciment, pietriș, etc), toate panourile de protecție a solului și pardoselilor DAVTRAX reprezintă o alternativă ecologică și competitivă care protejează solul si totodata economiseste timp pretios de transport si manipulare.\r\n\r\nDe la drumuri pietonale, parcări, suprafețe pentru depozitare, acces auto și utilaje de mare tonaj, calare macarale pe șantiere de construcții, acces sonde și parcuri eoliene, ca platforme de lucru în zone umede, nisipoase sau greu accesibile, placile DAVTRAX garanteaza o mare stabilitate în exploatare oricărui tip de vehicul sau utilaj.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0,
+            "wpml_cf_preferences": 0
         },
         {
             "key": "field_5ddaf48cabd5a",
@@ -168,7 +150,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "20",
                         "class": "",
                         "id": ""
                     },
@@ -203,5 +185,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1574632956
+    "modified": 1579460719
 }

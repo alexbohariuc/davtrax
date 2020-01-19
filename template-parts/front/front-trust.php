@@ -1,9 +1,12 @@
 <div class="front-trust">
 	<div class="grid-container">
 		<div class="grid-x">
-			<div class="cell small-12 large-offset-1">
+			<div class="cell small-12">
 				<div class="main-title">
-					<h2>Au avut încredere în noi</h2>
+					<h2>Au avut </br>
+						<mark>încredere</mark>
+						în noi
+					</h2>
 				</div>
 			</div>
 			<div class="cell small-12 medium-8 medium-offset-1">
@@ -31,22 +34,12 @@
 			<div class="cell small-12">
 				<div class="front-trust-logos">
 					<?php if (have_rows('front_trust_logos')): ?>
+						<?php while (have_rows('front_trust_logos')): the_row();
+							$image = get_sub_field('front_trust_logos_logo');
+							?>
+							<img src="<?php echo $image; ?>">
 
-						<div class="grid-x grid-margin-x">
-
-							<?php while (have_rows('front_trust_logos')): the_row();
-
-								// vars
-								$image = get_sub_field('front_trust_logos_logo');
-								?>
-
-								<div class="cell small-6 medium-3">
-									<img src="<?php echo $image; ?>">
-								</div>
-
-							<?php endwhile; ?>
-
-						</div>
+						<?php endwhile; ?>
 
 					<?php endif; ?>
 				</div>

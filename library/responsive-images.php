@@ -16,6 +16,8 @@ add_image_size( 'featured-medium', 1280, 400, true );
 add_image_size( 'featured-large', 1440, 400, true );
 add_image_size( 'featured-xlarge', 1920, 400, true );
 add_image_size( 'product-square', 450, 450, true );
+add_image_size( 'featured-projects', 380, 268, true );
+add_image_size( 'archive-product', 330, 420, true );
 
 // Add additional image sizes
 add_image_size( 'fp-small', 640 );

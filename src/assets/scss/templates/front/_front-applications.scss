@@ -44,11 +44,12 @@
   &-card {
     margin-bottom: rem-calc(30);
     &-wrap{
-      filter: drop-shadow(3px 3px 5px rgba(50, 50, 0, 0.3));
     }
-    clip-path: polygon(0 0, 0% 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0);
-    padding: rem-calc(20);
+    &-header{
+      margin-bottom: rem-calc(10);
+    }
     background-color: $white;
+
 
     &-title{
       font-family: $title-font-family;
@@ -64,6 +65,12 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 143.4%;
+    }
+  }
+
+  &-projects{
+    &-cta{
+      text-align: center;
     }
   }
 }

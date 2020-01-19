@@ -1,14 +1,33 @@
-.main-title h1, .main-title h2, .main-title h3,.main-title  h4, .main-title h5,.main-title  h6{
+.main-title h1, .main-title h2, .main-title h3, .main-title h4, .main-title h5, .main-title h6 {
   font-family: $title-font-family;
   font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 38px;
   line-height: 93.8%;
-  &:before{
-    content: url("../images/title.svg");
-    display: block;
+  text-transform: uppercase;
+
+  mark {
+    font-weight: 900;
+    background-color: transparent;
   }
-  &-right{
+
+  &:before {
+    content: url("../images/title.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rem-calc(10);
+  }
+
+  &-right {
 
   }
+}
+
+.secondary-title h1, .secondary-title h2, .secondary-title h3, .secondary-title h4, .secondary-title h5, .secondary-title h6, {
+  font-family: $title-font-family;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 93.8%;
+  text-transform: uppercase;
+  margin: rem-calc(20 0);
 }

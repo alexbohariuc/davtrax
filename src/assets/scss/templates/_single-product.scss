@@ -1,0 +1,57 @@
+.featured-hero{
+
+  &-product{
+    position: relative;
+    height: auto;
+    img{
+      width: 100%;
+      z-index: 1;
+    }
+    &-overlayer{
+      position: absolute;
+      background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 90%);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      transition: all ease-in-out .3s;
+    }
+    &-content{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 3;
+      .main-title{
+        color: $white;
+      }
+      &-properties{
+        margin-top: rem-calc(30);
+        &-property{
+          font-family: $title-font-family;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: $white;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+
+.single-product-container{
+  .main-title{
+    margin-top: rem-calc(60);
+    margin-bottom: rem-calc(60);
+  }
+  .archive-products-product-attributes{
+    margin-top: 0;
+  }
+}

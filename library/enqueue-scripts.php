@@ -40,7 +40,10 @@ if ( ! function_exists( 'davtrax_scripts' ) ) :
 		wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/' . davtrax_asset_path( 'app.css' ), array(), '2.10.4', 'all' );
 
 		// Enqueue the main Fonts - Montserrat & Raleway.
-		wp_enqueue_style( 'main-font', 'https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Raleway:400,700,700i&display=swap', array(), '2.10.4', 'all' );
+		wp_enqueue_style( 'main-font', 'https://fonts.googleapis.com/css?family=Muli:400,500,600,700,900|Raleway:400,700,700i&display=swap', array(), '2.10.4', 'all' );
+
+		// Enqueue Slick JS Slider
+		wp_enqueue_style( 'slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1', 'all' );
 
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );
@@ -56,6 +59,9 @@ if ( ! function_exists( 'davtrax_scripts' ) ) :
 
 		// Enqueue jQuery migrate. Uncomment the line below to enable.
 		// wp_enqueue_script( 'jquery-migrate' );
+
+		// Enqueue Slick JS scripts
+		wp_enqueue_script( 'slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.8.1', true );
 
 		// Enqueue Foundation scripts
 		wp_enqueue_script( 'foundation', get_stylesheet_directory_uri() . '/dist/assets/js/' . davtrax_asset_path( 'app.js' ), array( 'jquery' ), '2.10.4', true );

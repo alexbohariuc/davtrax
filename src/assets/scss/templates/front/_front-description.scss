@@ -1,0 +1,15 @@
+&-description {
+  position: relative;
+  img{
+    width: 100%;
+  }
+
+  &-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $white;
+    font-size: rem-calc(18);
+  }
+}
