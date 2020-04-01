@@ -2,6 +2,7 @@
 
   &-slide {
     position: relative;
+
     &:before {
       z-index: 1;
       content: '';
@@ -12,8 +13,14 @@
       top: 0;
       left: 0;
     }
-    img{
+
+    img {
       width: 100%;
+      @include breakpoint(small only) {
+        object-fit: cover;
+        object-position: center;
+        height: 60vh;
+      }
     }
 
     &-content {
@@ -22,6 +29,10 @@
       transform: translateY(-50%);
       width: 100%;
       z-index: 10;
+      @include breakpoint(small only) {
+        padding: rem-calc(20 50);
+      }
+
       &-title {
         position: relative;
         z-index: 10;
@@ -32,6 +43,9 @@
         line-height: 93.8%;
         color: $white;
         margin-bottom: rem-calc(20);
+        @include breakpoint(small only) {
+          font-size: rem-calc(20);
+        }
       }
 
       &-description {
@@ -51,33 +65,38 @@
     }
   }
 
-  .orbit-controls{
+  .orbit-controls {
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 120;
-    button{
+
+    button {
       position: relative;
-      &.orbit-previous{
+
+      &.orbit-previous {
         float: left;
       }
-      &.orbit-next{
+
+      &.orbit-next {
         float: right;
       }
     }
   }
 
-  .orbit-bullets{
+  .orbit-bullets {
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: rem-calc(30);
     z-index: 120;
-    button{
+
+    button {
       border: 3px solid $white;
       background-color: transparent;
-      &.is-active{
+
+      &.is-active {
         background-color: rgba($white, .6);
       }
     }

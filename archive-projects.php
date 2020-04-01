@@ -18,7 +18,7 @@
 get_header(); ?>
 
 	<div class="grid-container">
-		<main class="grid-x grid-margin-x">
+		<main class="grid-x grid-margin-x align-center">
 			<div class="cell small-12">
 				<div class="main-title">
 					<h1>
@@ -27,11 +27,27 @@ get_header(); ?>
 					</h1>
 				</div>
 			</div>
-			<div class="cell small-12">
+			<div class="cell small-12 medium-8">
 				<div class="archive-products-description">
-					Cele mai bune recomandari sunt clientii multumiti si proiectele noastre!
+					<?php
+					function get_id_by_slug($page_slug)
+					{
+						$page = get_page_by_path($page_slug);
+						if ($page) {
+							return $page->ID;
+						} else {
+							return null;
+						}
+					}
+
+					$pageID = get_id_by_slug('proiecte');
+
+					echo get_the_content('', '', $pageID) ?>
 				</div>
 			</div>
+
+		</main>
+		<div class="grid-x grid-margin-x">
 			<?php if (have_posts()) : ?>
 
 				<?php /* Start the Loop */ ?>
@@ -58,7 +74,7 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 
-		</main>
+		</div>
 	</div>
 
 <?php get_footer();

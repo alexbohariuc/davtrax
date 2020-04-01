@@ -37,7 +37,7 @@
 			<div class="cell small-12 medium-7">
 				<div class="front-trust-testimonial">
 					<div class="front-trust-testimonial-text">
-						–“Acum, dupa un eveniment de success, in care aprecierile au fost unanime, colaborarea cu Davtrax pentru
+						–“Acum, dupa un eveniment de success, in care aprecierile au fost unanime, colaborarea cu DAVTRAX pentru
 						utilizarea placilor heavy-duty s-a dovedit a fi una foarte inspirata, pentru care ne-am felicitat. Putem
 						confirma
 						cu tarie ca sloganul “v-am scos din noroi” nu a ramas unul politicianist , ci a devenit la propriu un fapt

@@ -17,7 +17,7 @@
 
 get_header(); ?>
 	<div class="grid-container">
-		<main class="archive-products grid-x">
+		<main class="archive-products grid-x align-center">
 			<div class="cell small-12">
 				<div class="main-title">
 					<h1>PLĂCILE PENTRU</br>
@@ -27,29 +27,26 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="cell small-12 medium-8">
-				<div class="archive-products-description">
-					<p>Aveti un proiect de infrastructura sau un eveniment unde trebuie sa asigurati accesul cu utilaje grele,
-						autoturisme sau pietoni? Aveti un buget si un timp limitat? Aveti nevoie sa simtiti mereu pamantul sub
-						picioare? Atunci cu siguranta DAVTRAX are o solutie pentru dumneavoastra!</p>
+				<p class="archive-products-description">
+					<?php
+					function get_id_by_slug($page_slug)
+					{
+						$page = get_page_by_path($page_slug);
+						if ($page) {
+							return $page->ID;
+						} else {
+							return null;
+						}
+					}
 
-					<p>Față de soluțiile tradiționale (dale de beton, pavaje din ciment, pietriș, etc), toate panourile de
-						protecție a solului și pardoselilor DAVTRAX reprezintă o alternativă ecologică și competitivă care
-						protejează solul si totodata economiseste timp pretios de transport si manipulare adica Bani.</p>
+					$pageID = get_id_by_slug('produse');
 
-					<p>In corelatie cu domeniul de utilizare si cu particularitatile fiecarui proiect, placile DAVTRAX pot asigura
-						optim accesul pentru orice tip de utilaje, autoturisme sau vehicule pana la cel pietonal. Fiind realizate
-						din polietilenă de înaltă densitate, reciclate și reciclabile 100%, plăcile DAVTRAX au o structură robustă
-						dar și extrem de fiabilă, oferind o siguranța sporita in exploatare, in conditii de utilizare conform
-						normelor.</p>
+					echo get_the_content('', '', $pageID) ?>
 
-					<p>Căile de acces mobile și drumurile temporare construite cu ajutorul produselor DAVTRAX răspund unei plaje
-						largi de necesități. De la drumuri pietonale, parcări, suprafețe pentru depozitare, acces auto și utilaje de
-						mare tonaj, calare macarale pe șantiere de construcții, acces sonde și parcuri eoliene, ca platforme de
-						lucru în zone umede, nisipoase sau greu accesibile, placile DAVTRAX garanteaza o mare stabilitate în
-						exploatare oricărui tip de vehicul sau utilaj.</p>
-
-				</div>
 			</div>
+		</main>
+
+		<div class="grid-x grid-margin-x">
 			<?php if (have_posts()) : ?>
 
 				<?php /* Start the Loop */ ?>
@@ -363,7 +360,7 @@ get_header(); ?>
 				</nav>
 			<?php endif; ?>
 
-		</main>
+		</div>
 	</div>
 
 <?php get_footer();

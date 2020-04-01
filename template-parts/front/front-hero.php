@@ -24,7 +24,8 @@
 					<?php
 
 					// vars
-					$image = get_sub_field('homepage_slide_image');
+					$imageID = get_sub_field('homepage_slide_image');
+					$image = wp_get_attachment_image_url( $imageID,'slider-image' );
 					$title = get_sub_field('homepage_slide_title');
 					$description = get_sub_field('homepage_slide_description');
 					$cta = get_sub_field('homepage_slide_button');

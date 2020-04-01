@@ -4,7 +4,7 @@
 			<div class="cell small-12">
 				<div class="main-title">
 					<h2>Plăcile
-						<mark>Davtrax</mark>
+						<mark>DAVTRAX</mark>
 					</h2>
 				</div>
 			</div>

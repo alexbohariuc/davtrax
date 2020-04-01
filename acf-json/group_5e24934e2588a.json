@@ -35,7 +35,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
+                    "wpml_cf_preferences": 0,
+                    "return_format": "id",
                     "preview_size": "thumbnail",
                     "library": "all",
                     "min_width": "",
@@ -44,8 +45,7 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": "",
-                    "wpml_cf_preferences": 0
+                    "mime_types": ""
                 },
                 {
                     "key": "field_5e2493667fee0",
@@ -144,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579456148
+    "modified": 1580811653
 }

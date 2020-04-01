@@ -231,7 +231,7 @@
 			<div class="cell small-12">
 				<div class="secondary-title">
 					<h5>
-						Ultimele proiecte realizate
+						Proiecte realizate cu plăcile DAVTRAX
 					</h5>
 				</div>
 			</div>

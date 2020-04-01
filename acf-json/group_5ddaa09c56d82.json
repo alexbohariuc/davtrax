@@ -25,7 +25,7 @@
             "key": "field_5ddaa8c62b9c2",
             "label": "Cine suntem noi - descriere",
             "name": "front_who_description",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,11 +34,11 @@
                 "class": "",
                 "id": ""
             },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "delay": 0
         },
         {
             "key": "field_5ddaa8e12b9c3",
@@ -185,5 +185,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579460719
+    "modified": 1580812350
 }

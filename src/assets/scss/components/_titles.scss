@@ -5,7 +5,9 @@
   font-size: 38px;
   line-height: 93.8%;
   text-transform: uppercase;
-
+  @include breakpoint(small only){
+    font-size: rem-calc(24);
+  }
   mark {
     font-weight: 900;
     background-color: transparent;

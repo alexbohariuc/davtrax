@@ -1,11 +1,20 @@
 .featured-hero{
 
+
   &-product{
     position: relative;
     height: auto;
+    @include breakpoint(small only){
+      height: 50vh;
+    }
     img{
       width: 100%;
       z-index: 1;
+      @include breakpoint(small only) {
+        object-fit: cover;
+        object-position: center;
+        height: 50vh;
+      }
     }
     &-overlayer{
       position: absolute;
@@ -26,11 +35,22 @@
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       z-index: 3;
+      @include breakpoint(small only) {
+        height: auto;
+      }
+      img{
+        @include breakpoint(small only) {
+          object-fit: initial;
+          object-position: initial;
+          height: initial;
+        }
+      }
       .main-title{
         color: $white;
       }
       &-properties{
         margin-top: rem-calc(30);
+
         &-property{
           font-family: $title-font-family;
           font-style: normal;

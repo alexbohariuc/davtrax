@@ -2,6 +2,11 @@
   position: relative;
   img{
     width: 100%;
+    @include breakpoint(small only) {
+      object-fit: cover;
+      object-position: center;
+      height: 130vh;
+    }
   }
 
   &-text {
@@ -11,5 +16,10 @@
     transform: translateY(-50%);
     color: $white;
     font-size: rem-calc(18);
+    @include breakpoint(small only){
+      font-size: rem-calc(16);
+      transform: translateY(0);
+      top: rem-calc(20);
+    }
   }
 }
